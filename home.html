@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🏠My Porfolio</title>
+  <link rel="stylesheet" href="home.css">
+  
+</head>
+<body>
+
+  <header>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </header>
+
+  <!-- Replace with your real image -->
+  <img src="profile.jpg" alt="Your Picture" class="profile-pic" />
+
+  <h1>Ashley Gwen G. Guiral</h1>
+  <h2>UI/UX Designer</h2>
+
+  <button class="resume-btn" onclick="downloadResume()">Download Resume</button>
+
+  <script>
+    function downloadResume() {
+      // Replace with your actual resume path
+      const resumeUrl = 'RESUME.pdf';
+      const a = document.createElement('a');
+      a.href = resumeUrl;
+      a.download = 'RESUME.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+</body>
+</html>
